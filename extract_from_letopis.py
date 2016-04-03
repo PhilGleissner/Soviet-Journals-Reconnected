@@ -17,11 +17,11 @@ searchfile = open(x, "r")
 
 #Search and print lines to newfile
 for line in searchfile:
-#    if "Iunost" - followed by either ", ", ". " or " " + four integers in line (regex?):
+#    if "Юность" - followed by either ", ", ". " or " " + four integers in line (regex?):
         f = open(newfile, 'w')
         f.write(line) #This too will be in cyrillic. Is that a problem?
         f.close()
         break
-#repeat operation for "Знамя," "Дружба народов," "Октябрь", "Наш современник", "Молодая гвардия", "Новый мир"
+#repeat operation for other potential journal names: "Знамя," "Дружба народов," "Октябрь", "Наш современник", "Молодая гвардия", "Новый мир"
 
 searchfile.close()
